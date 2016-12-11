@@ -1,0 +1,44 @@
+* {width: 100%; margin: 0; padding: 0; box-sizing: border-box; display: block; border-collapse: collapse; border: 0px;}
+body { background-color: #003300; color: #003300; font-weight: bold;
+font-family: monospace; font-size: 18px; border: 1px solid;
+}
+.container {
+width: 80%; margin: 1% auto 0 auto; border: 1px solid;
+}
+a {
+  text-decoration: none; color: #fff;
+}
+a:active, a:hover {
+  color: #ffff33;
+}
+header {
+  height: 100px; background-color: #fff; color: #003300; text-align: center;
+  width: 100%;
+}
+nav{
+  background-color: #003300; color: #003300; text-align: left;
+}
+nav ul {
+   background-color: #003300;
+}
+nav ul li {
+  display: inline-block; text-align: center; width: 24%;
+  margin:auto; padding: 5px;
+}
+main {
+  width: 100%; background-color: #fff;
+   padding: 5px; overflow: auto;
+}
+
+fieldset { width: 45%; float: left; padding: 5px; margin: 2%;}
+input { padding: 5px; border: 1px solid;}
+input[type=submit], input[type=reset] {
+  width: 45%; padding: 5px; background-color: #003300; display: inline; color: white; margin: 0 auto 0 auto;
+}
+tr:nth-of-type(odd) {background-color: #003300; color: #fff; }
+td, th { display: inline-block; padding: 5px; width: auto;}
+.idcol {width: 10%;}
+.namecol {width: 17%; text-align: left;}
+.songcol {width: 43%;}
+.genrecol {width: 13%;}
+.albumcol {width: 17%;}
