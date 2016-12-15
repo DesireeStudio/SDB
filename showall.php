@@ -12,7 +12,8 @@ SD Entries
 include("header.html");
 
 function dbSelect(){
-$conn = new mysqli("localhost", "website_user", "my*pass", "songs");
+//$conn = new mysqli("localhost", "website_user", "my*pass", "songs");
+$conn = new mysqli("o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "kaj2rzp8frsut51b", "fran4p3njcnqcupt", "kwiva1yh4z62d2sn");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
