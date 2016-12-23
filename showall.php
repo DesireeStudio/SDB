@@ -13,7 +13,8 @@ include("header.html");
 
 function dbSelect(){
 //$conn = new mysqli("localhost", "website_user", "my*pass", "songs");
-$conn = new mysqli("o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "kaj2rzp8frsut51b", "fran4p3njcnqcupt", "kwiva1yh4z62d2sn");
+//$conn = new mysqli("o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "kaj2rzp8frsut51b", "fran4p3njcnqcupt", "kwiva1yh4z62d2sn");
+$conn = new mysqli(getenv('JAWSDB_HOST'), getenv('JAWSDB_USER'), getenv('JAWSDB_PASS'), getenv('JAWSDB_DBNAME'));
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
