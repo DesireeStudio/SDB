@@ -12,7 +12,7 @@ SD Entries
 include("header.html");
 
 function dbSelect(){
-$conn = new mysqli("localhost", "website_user", "my*pass", "songs");
+$conn = new mysqli(getenv('JAWSDB_HOST'), getenv('JAWSDB_USER'), getenv('JAWSDB_PASS'), getenv('JAWSDB_DBNAME'));
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
